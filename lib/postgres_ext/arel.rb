@@ -10,9 +10,9 @@ if ar_version_cutoff5
   require 'postgres_ext/arel/5.0/predications'
   require 'postgres_ext/arel/5.0/visitors'
 elsif ar_version_cutoff4
-  require 'postgres_ext/arel/4.2/predications'
-  require 'postgres_ext/arel/4.2/visitors'
+  require 'postgres_ext/arel/5.0/predications'
+  require 'postgres_ext/arel/5.0/visitors'
 else
-  require 'postgres_ext/arel/4.1/predications'
-  require 'postgres_ext/arel/4.1/visitors'
+  require 'postgres_ext/arel/5.0/predications'
+  require 'postgres_ext/arel/5.0/visitors'
 end
