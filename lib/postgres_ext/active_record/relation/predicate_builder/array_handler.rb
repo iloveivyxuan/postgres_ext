@@ -25,7 +25,8 @@ module ActiveRecord
           end
         end
 
-        alias_method_chain(:call, :feature)
+        alias_method :call_without_feature, :call
+        alias_method :call, :call_with_feature
       end
 
       module ClassMethods
